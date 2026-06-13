@@ -2,9 +2,20 @@
   "version": 2,
   "name": "pronos-cdm-2026",
   "builds": [
-    { "src": "**/*", "use": "@vercel/static" }
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "**/*.css", "use": "@vercel/static" },
+    { "src": "**/*.js", "use": "@vercel/static" },
+    { "src": "**/*.json", "use": "@vercel/static" },
+    { "src": "api/sync-results.js", "use": "@vercel/node" }
   ],
   "routes": [
+    { "src": "/api/sync-results", "dest": "/api/sync-results.js" },
     { "src": "/(.*)", "dest": "/$1" }
+  ],
+  "crons": [
+    {
+      "path": "/api/sync-results",
+      "schedule": "0 * * * *"
+    }
   ]
 }
