@@ -1,650 +1,650 @@
 [
   {
-    "id": "m1",
     "stage": "Groupe A",
     "date": "2026-06-11T20:00:00+01:00",
     "home": "Mexique",
     "away": "Afrique du Sud",
     "homeFlag": "🇲🇽",
-    "awayFlag": "🇿🇦"
+    "awayFlag": "🇿🇦",
+    "id": "m1"
   },
   {
-    "id": "m2",
     "stage": "Groupe A",
-    "date": "2026-06-12T17:00:00+01:00",
+    "date": "2026-06-12T03:00:00+01:00",
     "home": "Corée du Sud",
     "away": "Tchéquie",
     "homeFlag": "🇰🇷",
-    "awayFlag": "🇨🇿"
+    "awayFlag": "🇨🇿",
+    "id": "m2"
   },
   {
-    "id": "m3",
     "stage": "Groupe B",
     "date": "2026-06-12T20:00:00+01:00",
     "home": "Canada",
     "away": "Bosnie-Herzégovine",
     "homeFlag": "🇨🇦",
-    "awayFlag": "🇧🇦"
+    "awayFlag": "🇧🇦",
+    "id": "m3"
   },
   {
-    "id": "m4",
     "stage": "Groupe D",
-    "date": "2026-06-14T02:00:00+01:00",
+    "date": "2026-06-13T02:00:00+01:00",
     "home": "États-Unis",
     "away": "Paraguay",
     "homeFlag": "🇺🇸",
-    "awayFlag": "🇵🇾"
+    "awayFlag": "🇵🇾",
+    "id": "m4"
   },
   {
-    "id": "m5",
+    "stage": "Groupe B",
+    "date": "2026-06-13T20:00:00+01:00",
+    "home": "Qatar",
+    "away": "Suisse",
+    "homeFlag": "🇶🇦",
+    "awayFlag": "🇨🇭",
+    "id": "m5"
+  },
+  {
+    "stage": "Groupe C",
+    "date": "2026-06-13T23:00:00+01:00",
+    "home": "Brésil",
+    "away": "Maroc",
+    "homeFlag": "🇧🇷",
+    "awayFlag": "🇲🇦",
+    "id": "m6"
+  },
+  {
     "stage": "Groupe C",
     "date": "2026-06-14T02:00:00+01:00",
     "home": "Haïti",
     "away": "Écosse",
     "homeFlag": "🇭🇹",
-    "awayFlag": "🏴"
+    "awayFlag": "🏴",
+    "id": "m7"
   },
   {
-    "id": "m6",
     "stage": "Groupe D",
     "date": "2026-06-14T05:00:00+01:00",
     "home": "Australie",
     "away": "Turquie",
     "homeFlag": "🇦🇺",
-    "awayFlag": "🇹🇷"
+    "awayFlag": "🇹🇷",
+    "id": "m8"
   },
   {
-    "id": "m10",
     "stage": "Groupe E",
     "date": "2026-06-14T18:00:00+01:00",
     "home": "Allemagne",
     "away": "Curaçao",
     "homeFlag": "🇩🇪",
-    "awayFlag": "🇨🇼"
+    "awayFlag": "🇨🇼",
+    "id": "m9"
   },
   {
-    "id": "m8",
-    "stage": "Groupe B",
-    "date": "2026-06-14T20:00:00+01:00",
-    "home": "Qatar",
-    "away": "Suisse",
-    "homeFlag": "🇶🇦",
-    "awayFlag": "🇨🇭"
+    "stage": "Groupe F",
+    "date": "2026-06-14T21:00:00+01:00",
+    "home": "Pays-Bas",
+    "away": "Japon",
+    "homeFlag": "🇳🇱",
+    "awayFlag": "🇯🇵",
+    "id": "m10"
   },
   {
-    "id": "m7",
-    "stage": "Groupe C",
-    "date": "2026-06-14T23:00:00+01:00",
-    "home": "Brésil",
-    "away": "Maroc",
-    "homeFlag": "🇧🇷",
-    "awayFlag": "🇲🇦"
-  },
-  {
-    "id": "m9",
     "stage": "Groupe E",
     "date": "2026-06-15T00:00:00+01:00",
     "home": "Côte d'Ivoire",
     "away": "Équateur",
     "homeFlag": "🇨🇮",
-    "awayFlag": "🇪🇨"
+    "awayFlag": "🇪🇨",
+    "id": "m11"
   },
   {
-    "id": "m14",
+    "stage": "Groupe F",
+    "date": "2026-06-15T03:00:00+01:00",
+    "home": "Suède",
+    "away": "Tunisie",
+    "homeFlag": "🇸🇪",
+    "awayFlag": "🇹🇳",
+    "id": "m12"
+  },
+  {
     "stage": "Groupe H",
     "date": "2026-06-15T17:00:00+01:00",
     "home": "Espagne",
     "away": "Cap-Vert",
     "homeFlag": "🇪🇸",
-    "awayFlag": "🇨🇻"
+    "awayFlag": "🇨🇻",
+    "id": "m13"
   },
   {
-    "id": "m16",
     "stage": "Groupe G",
     "date": "2026-06-15T20:00:00+01:00",
     "home": "Belgique",
     "away": "Égypte",
     "homeFlag": "🇧🇪",
-    "awayFlag": "🇪🇬"
+    "awayFlag": "🇪🇬",
+    "id": "m14"
   },
   {
-    "id": "m11",
-    "stage": "Groupe F",
-    "date": "2026-06-15T21:00:00+01:00",
-    "home": "Pays-Bas",
-    "away": "Japon",
-    "homeFlag": "🇳🇱",
-    "awayFlag": "🇯🇵"
-  },
-  {
-    "id": "m13",
     "stage": "Groupe H",
     "date": "2026-06-15T23:00:00+01:00",
     "home": "Arabie Saoudite",
     "away": "Uruguay",
     "homeFlag": "🇸🇦",
-    "awayFlag": "🇺🇾"
+    "awayFlag": "🇺🇾",
+    "id": "m15"
   },
   {
-    "id": "m15",
     "stage": "Groupe G",
     "date": "2026-06-16T02:00:00+01:00",
     "home": "Iran",
     "away": "Nouvelle-Zélande",
     "homeFlag": "🇮🇷",
-    "awayFlag": "🇳🇿"
+    "awayFlag": "🇳🇿",
+    "id": "m16"
   },
   {
-    "id": "m12",
-    "stage": "Groupe F",
-    "date": "2026-06-16T03:00:00+01:00",
-    "home": "Suède",
-    "away": "Tunisie",
-    "homeFlag": "🇸🇪",
-    "awayFlag": "🇹🇳"
-  },
-  {
-    "id": "m17",
     "stage": "Groupe I",
     "date": "2026-06-16T20:00:00+01:00",
     "home": "France",
     "away": "Sénégal",
     "homeFlag": "🇫🇷",
-    "awayFlag": "🇸🇳"
+    "awayFlag": "🇸🇳",
+    "id": "m17"
   },
   {
-    "id": "m22",
-    "stage": "Groupe L",
-    "date": "2026-06-16T21:00:00+01:00",
-    "home": "Angleterre",
-    "away": "Croatie",
-    "homeFlag": "🏴",
-    "awayFlag": "🇭🇷"
-  },
-  {
-    "id": "m18",
     "stage": "Groupe I",
     "date": "2026-06-16T23:00:00+01:00",
     "home": "Irak",
     "away": "Norvège",
     "homeFlag": "🇮🇶",
-    "awayFlag": "🇳🇴"
+    "awayFlag": "🇳🇴",
+    "id": "m18"
   },
   {
-    "id": "m21",
-    "stage": "Groupe L",
-    "date": "2026-06-17T00:00:00+01:00",
-    "home": "Ghana",
-    "away": "Panama",
-    "homeFlag": "🇬🇭",
-    "awayFlag": "🇵🇦"
-  },
-  {
-    "id": "m19",
     "stage": "Groupe J",
     "date": "2026-06-17T02:00:00+01:00",
     "home": "Argentine",
     "away": "Algérie",
     "homeFlag": "🇦🇷",
-    "awayFlag": "🇩🇿"
+    "awayFlag": "🇩🇿",
+    "id": "m19"
   },
   {
-    "id": "m20",
     "stage": "Groupe J",
     "date": "2026-06-17T05:00:00+01:00",
     "home": "Autriche",
     "away": "Jordanie",
     "homeFlag": "🇦🇹",
-    "awayFlag": "🇯🇴"
+    "awayFlag": "🇯🇴",
+    "id": "m20"
   },
   {
-    "id": "m25",
-    "stage": "Groupe A",
-    "date": "2026-06-17T17:00:00+01:00",
-    "home": "Tchéquie",
-    "away": "Afrique du Sud",
-    "homeFlag": "🇨🇿",
-    "awayFlag": "🇿🇦"
-  },
-  {
-    "id": "m23",
     "stage": "Groupe K",
     "date": "2026-06-17T18:00:00+01:00",
     "home": "Portugal",
     "away": "RD Congo",
     "homeFlag": "🇵🇹",
-    "awayFlag": "🇨🇩"
+    "awayFlag": "🇨🇩",
+    "id": "m21"
   },
   {
-    "id": "m26",
-    "stage": "Groupe B",
-    "date": "2026-06-17T20:00:00+01:00",
-    "home": "Suisse",
-    "away": "Bosnie-Herzégovine",
-    "homeFlag": "🇨🇭",
-    "awayFlag": "🇧🇦"
+    "stage": "Groupe L",
+    "date": "2026-06-17T21:00:00+01:00",
+    "home": "Angleterre",
+    "away": "Croatie",
+    "homeFlag": "🏴",
+    "awayFlag": "🇭🇷",
+    "id": "m22"
   },
   {
-    "id": "m24",
+    "stage": "Groupe L",
+    "date": "2026-06-18T00:00:00+01:00",
+    "home": "Ghana",
+    "away": "Panama",
+    "homeFlag": "🇬🇭",
+    "awayFlag": "🇵🇦",
+    "id": "m23"
+  },
+  {
     "stage": "Groupe K",
     "date": "2026-06-18T03:00:00+01:00",
     "home": "Ouzbékistan",
     "away": "Colombie",
     "homeFlag": "🇺🇿",
-    "awayFlag": "🇨🇴"
+    "awayFlag": "🇨🇴",
+    "id": "m24"
   },
   {
-    "id": "m27",
+    "stage": "Groupe A",
+    "date": "2026-06-18T17:00:00+01:00",
+    "home": "Tchéquie",
+    "away": "Afrique du Sud",
+    "homeFlag": "🇨🇿",
+    "awayFlag": "🇿🇦",
+    "id": "m25"
+  },
+  {
+    "stage": "Groupe B",
+    "date": "2026-06-18T20:00:00+01:00",
+    "home": "Suisse",
+    "away": "Bosnie-Herzégovine",
+    "homeFlag": "🇨🇭",
+    "awayFlag": "🇧🇦",
+    "id": "m26"
+  },
+  {
     "stage": "Groupe B",
     "date": "2026-06-18T23:00:00+01:00",
     "home": "Canada",
     "away": "Qatar",
     "homeFlag": "🇨🇦",
-    "awayFlag": "🇶🇦"
+    "awayFlag": "🇶🇦",
+    "id": "m27"
   },
   {
-    "id": "m30",
-    "stage": "Groupe C",
-    "date": "2026-06-18T23:00:00+01:00",
-    "home": "Écosse",
-    "away": "Maroc",
-    "homeFlag": "🏴",
-    "awayFlag": "🇲🇦"
-  },
-  {
-    "id": "m29",
-    "stage": "Groupe C",
-    "date": "2026-06-19T01:30:00+01:00",
-    "home": "Brésil",
-    "away": "Haïti",
-    "homeFlag": "🇧🇷",
-    "awayFlag": "🇭🇹"
-  },
-  {
-    "id": "m28",
     "stage": "Groupe A",
     "date": "2026-06-19T02:00:00+01:00",
     "home": "Mexique",
     "away": "Corée du Sud",
     "homeFlag": "🇲🇽",
-    "awayFlag": "🇰🇷"
+    "awayFlag": "🇰🇷",
+    "id": "m28"
   },
   {
-    "id": "m31",
-    "stage": "Groupe D",
-    "date": "2026-06-19T04:00:00+01:00",
-    "home": "Turquie",
-    "away": "Paraguay",
-    "homeFlag": "🇹🇷",
-    "awayFlag": "🇵🇾"
-  },
-  {
-    "id": "m38",
-    "stage": "Groupe H",
-    "date": "2026-06-19T17:00:00+01:00",
-    "home": "Espagne",
-    "away": "Arabie Saoudite",
-    "homeFlag": "🇪🇸",
-    "awayFlag": "🇸🇦"
-  },
-  {
-    "id": "m35",
-    "stage": "Groupe F",
-    "date": "2026-06-19T18:00:00+01:00",
-    "home": "Pays-Bas",
-    "away": "Suède",
-    "homeFlag": "🇳🇱",
-    "awayFlag": "🇸🇪"
-  },
-  {
-    "id": "m32",
     "stage": "Groupe D",
     "date": "2026-06-19T20:00:00+01:00",
     "home": "États-Unis",
     "away": "Australie",
     "homeFlag": "🇺🇸",
-    "awayFlag": "🇦🇺"
+    "awayFlag": "🇦🇺",
+    "id": "m29"
   },
   {
-    "id": "m33",
+    "stage": "Groupe C",
+    "date": "2026-06-19T23:00:00+01:00",
+    "home": "Écosse",
+    "away": "Maroc",
+    "homeFlag": "🏴",
+    "awayFlag": "🇲🇦",
+    "id": "m30"
+  },
+  {
+    "stage": "Groupe C",
+    "date": "2026-06-20T01:30:00+01:00",
+    "home": "Brésil",
+    "away": "Haïti",
+    "homeFlag": "🇧🇷",
+    "awayFlag": "🇭🇹",
+    "id": "m31"
+  },
+  {
+    "stage": "Groupe D",
+    "date": "2026-06-20T04:00:00+01:00",
+    "home": "Turquie",
+    "away": "Paraguay",
+    "homeFlag": "🇹🇷",
+    "awayFlag": "🇵🇾",
+    "id": "m32"
+  },
+  {
+    "stage": "Groupe F",
+    "date": "2026-06-20T18:00:00+01:00",
+    "home": "Pays-Bas",
+    "away": "Suède",
+    "homeFlag": "🇳🇱",
+    "awayFlag": "🇸🇪",
+    "id": "m33"
+  },
+  {
     "stage": "Groupe E",
-    "date": "2026-06-19T21:00:00+01:00",
+    "date": "2026-06-20T21:00:00+01:00",
     "home": "Allemagne",
     "away": "Côte d'Ivoire",
     "homeFlag": "🇩🇪",
-    "awayFlag": "🇨🇮"
+    "awayFlag": "🇨🇮",
+    "id": "m34"
   },
   {
-    "id": "m37",
-    "stage": "Groupe H",
-    "date": "2026-06-19T23:00:00+01:00",
-    "home": "Uruguay",
-    "away": "Cap-Vert",
-    "homeFlag": "🇺🇾",
-    "awayFlag": "🇨🇻"
-  },
-  {
-    "id": "m34",
     "stage": "Groupe E",
-    "date": "2026-06-20T01:00:00+01:00",
+    "date": "2026-06-21T01:00:00+01:00",
     "home": "Équateur",
     "away": "Curaçao",
     "homeFlag": "🇪🇨",
-    "awayFlag": "🇨🇼"
+    "awayFlag": "🇨🇼",
+    "id": "m35"
   },
   {
-    "id": "m36",
     "stage": "Groupe F",
-    "date": "2026-06-20T05:00:00+01:00",
+    "date": "2026-06-21T05:00:00+01:00",
     "home": "Tunisie",
     "away": "Japon",
     "homeFlag": "🇹🇳",
-    "awayFlag": "🇯🇵"
+    "awayFlag": "🇯🇵",
+    "id": "m36"
   },
   {
-    "id": "m43",
-    "stage": "Groupe J",
-    "date": "2026-06-20T18:00:00+01:00",
-    "home": "Argentine",
-    "away": "Autriche",
-    "homeFlag": "🇦🇷",
-    "awayFlag": "🇦🇹"
+    "stage": "Groupe H",
+    "date": "2026-06-21T17:00:00+01:00",
+    "home": "Espagne",
+    "away": "Arabie Saoudite",
+    "homeFlag": "🇪🇸",
+    "awayFlag": "🇸🇦",
+    "id": "m37"
   },
   {
-    "id": "m39",
     "stage": "Groupe G",
-    "date": "2026-06-20T20:00:00+01:00",
+    "date": "2026-06-21T20:00:00+01:00",
     "home": "Belgique",
     "away": "Iran",
     "homeFlag": "🇧🇪",
-    "awayFlag": "🇮🇷"
+    "awayFlag": "🇮🇷",
+    "id": "m38"
   },
   {
-    "id": "m42",
-    "stage": "Groupe I",
-    "date": "2026-06-20T22:00:00+01:00",
-    "home": "France",
-    "away": "Irak",
-    "homeFlag": "🇫🇷",
-    "awayFlag": "🇮🇶"
+    "stage": "Groupe H",
+    "date": "2026-06-21T23:00:00+01:00",
+    "home": "Uruguay",
+    "away": "Cap-Vert",
+    "homeFlag": "🇺🇾",
+    "awayFlag": "🇨🇻",
+    "id": "m39"
   },
   {
-    "id": "m41",
-    "stage": "Groupe I",
-    "date": "2026-06-21T01:00:00+01:00",
-    "home": "Norvège",
-    "away": "Sénégal",
-    "homeFlag": "🇳🇴",
-    "awayFlag": "🇸🇳"
-  },
-  {
-    "id": "m40",
     "stage": "Groupe G",
-    "date": "2026-06-21T02:00:00+01:00",
+    "date": "2026-06-22T02:00:00+01:00",
     "home": "Nouvelle-Zélande",
     "away": "Égypte",
     "homeFlag": "🇳🇿",
-    "awayFlag": "🇪🇬"
+    "awayFlag": "🇪🇬",
+    "id": "m40"
   },
   {
-    "id": "m44",
     "stage": "Groupe J",
-    "date": "2026-06-21T04:00:00+01:00",
+    "date": "2026-06-22T18:00:00+01:00",
+    "home": "Argentine",
+    "away": "Autriche",
+    "homeFlag": "🇦🇷",
+    "awayFlag": "🇦🇹",
+    "id": "m41"
+  },
+  {
+    "stage": "Groupe I",
+    "date": "2026-06-22T22:00:00+01:00",
+    "home": "France",
+    "away": "Irak",
+    "homeFlag": "🇫🇷",
+    "awayFlag": "🇮🇶",
+    "id": "m42"
+  },
+  {
+    "stage": "Groupe I",
+    "date": "2026-06-23T01:00:00+01:00",
+    "home": "Norvège",
+    "away": "Sénégal",
+    "homeFlag": "🇳🇴",
+    "awayFlag": "🇸🇳",
+    "id": "m43"
+  },
+  {
+    "stage": "Groupe J",
+    "date": "2026-06-23T04:00:00+01:00",
     "home": "Jordanie",
     "away": "Algérie",
     "homeFlag": "🇯🇴",
-    "awayFlag": "🇩🇿"
+    "awayFlag": "🇩🇿",
+    "id": "m44"
   },
   {
-    "id": "m47",
     "stage": "Groupe K",
-    "date": "2026-06-21T18:00:00+01:00",
+    "date": "2026-06-23T18:00:00+01:00",
     "home": "Portugal",
     "away": "Ouzbékistan",
     "homeFlag": "🇵🇹",
-    "awayFlag": "🇺🇿"
+    "awayFlag": "🇺🇿",
+    "id": "m45"
   },
   {
-    "id": "m45",
     "stage": "Groupe L",
-    "date": "2026-06-21T21:00:00+01:00",
+    "date": "2026-06-23T21:00:00+01:00",
     "home": "Angleterre",
     "away": "Ghana",
     "homeFlag": "🏴",
-    "awayFlag": "🇬🇭"
+    "awayFlag": "🇬🇭",
+    "id": "m46"
   },
   {
-    "id": "m49",
-    "stage": "Groupe C",
-    "date": "2026-06-21T23:00:00+01:00",
-    "home": "Écosse",
-    "away": "Brésil",
-    "homeFlag": "🏴",
-    "awayFlag": "🇧🇷"
-  },
-  {
-    "id": "m50",
-    "stage": "Groupe C",
-    "date": "2026-06-21T23:00:00+01:00",
-    "home": "Maroc",
-    "away": "Haïti",
-    "homeFlag": "🇲🇦",
-    "awayFlag": "🇭🇹"
-  },
-  {
-    "id": "m46",
     "stage": "Groupe L",
-    "date": "2026-06-22T00:00:00+01:00",
+    "date": "2026-06-24T00:00:00+01:00",
     "home": "Panama",
     "away": "Croatie",
     "homeFlag": "🇵🇦",
-    "awayFlag": "🇭🇷"
+    "awayFlag": "🇭🇷",
+    "id": "m47"
   },
   {
-    "id": "m48",
     "stage": "Groupe K",
-    "date": "2026-06-22T03:00:00+01:00",
+    "date": "2026-06-24T03:00:00+01:00",
     "home": "Colombie",
     "away": "RD Congo",
     "homeFlag": "🇨🇴",
-    "awayFlag": "🇨🇩"
+    "awayFlag": "🇨🇩",
+    "id": "m48"
   },
   {
-    "id": "m51",
     "stage": "Groupe B",
-    "date": "2026-06-22T20:00:00+01:00",
+    "date": "2026-06-24T20:00:00+01:00",
     "home": "Suisse",
     "away": "Canada",
     "homeFlag": "🇨🇭",
-    "awayFlag": "🇨🇦"
+    "awayFlag": "🇨🇦",
+    "id": "m49"
   },
   {
-    "id": "m52",
     "stage": "Groupe B",
-    "date": "2026-06-22T20:00:00+01:00",
+    "date": "2026-06-24T20:00:00+01:00",
     "home": "Bosnie-Herzégovine",
     "away": "Qatar",
     "homeFlag": "🇧🇦",
-    "awayFlag": "🇶🇦"
+    "awayFlag": "🇶🇦",
+    "id": "m50"
   },
   {
-    "id": "m55",
-    "stage": "Groupe E",
-    "date": "2026-06-22T21:00:00+01:00",
-    "home": "Curaçao",
-    "away": "Côte d'Ivoire",
-    "homeFlag": "🇨🇼",
-    "awayFlag": "🇨🇮"
+    "stage": "Groupe C",
+    "date": "2026-06-24T23:00:00+01:00",
+    "home": "Écosse",
+    "away": "Brésil",
+    "homeFlag": "🏴",
+    "awayFlag": "🇧🇷",
+    "id": "m51"
   },
   {
-    "id": "m56",
-    "stage": "Groupe E",
-    "date": "2026-06-22T21:00:00+01:00",
-    "home": "Équateur",
-    "away": "Allemagne",
-    "homeFlag": "🇪🇨",
-    "awayFlag": "🇩🇪"
+    "stage": "Groupe C",
+    "date": "2026-06-24T23:00:00+01:00",
+    "home": "Maroc",
+    "away": "Haïti",
+    "homeFlag": "🇲🇦",
+    "awayFlag": "🇭🇹",
+    "id": "m52"
   },
   {
-    "id": "m57",
-    "stage": "Groupe F",
-    "date": "2026-06-23T00:00:00+01:00",
-    "home": "Japon",
-    "away": "Suède",
-    "homeFlag": "🇯🇵",
-    "awayFlag": "🇸🇪"
-  },
-  {
-    "id": "m58",
-    "stage": "Groupe F",
-    "date": "2026-06-23T00:00:00+01:00",
-    "home": "Tunisie",
-    "away": "Pays-Bas",
-    "homeFlag": "🇹🇳",
-    "awayFlag": "🇳🇱"
-  },
-  {
-    "id": "m53",
     "stage": "Groupe A",
-    "date": "2026-06-23T02:00:00+01:00",
+    "date": "2026-06-25T02:00:00+01:00",
     "home": "Tchéquie",
     "away": "Mexique",
     "homeFlag": "🇨🇿",
-    "awayFlag": "🇲🇽"
+    "awayFlag": "🇲🇽",
+    "id": "m53"
   },
   {
-    "id": "m54",
     "stage": "Groupe A",
-    "date": "2026-06-23T02:00:00+01:00",
+    "date": "2026-06-25T02:00:00+01:00",
     "home": "Afrique du Sud",
     "away": "Corée du Sud",
     "homeFlag": "🇿🇦",
-    "awayFlag": "🇰🇷"
+    "awayFlag": "🇰🇷",
+    "id": "m54"
   },
   {
-    "id": "m61",
-    "stage": "Groupe I",
-    "date": "2026-06-23T20:00:00+01:00",
-    "home": "Norvège",
-    "away": "France",
-    "homeFlag": "🇳🇴",
-    "awayFlag": "🇫🇷"
+    "stage": "Groupe E",
+    "date": "2026-06-25T21:00:00+01:00",
+    "home": "Curaçao",
+    "away": "Côte d'Ivoire",
+    "homeFlag": "🇨🇼",
+    "awayFlag": "🇨🇮",
+    "id": "m55"
   },
   {
-    "id": "m62",
-    "stage": "Groupe I",
-    "date": "2026-06-23T20:00:00+01:00",
-    "home": "Sénégal",
-    "away": "Irak",
-    "homeFlag": "🇸🇳",
-    "awayFlag": "🇮🇶"
+    "stage": "Groupe E",
+    "date": "2026-06-25T21:00:00+01:00",
+    "home": "Équateur",
+    "away": "Allemagne",
+    "homeFlag": "🇪🇨",
+    "awayFlag": "🇩🇪",
+    "id": "m56"
   },
   {
-    "id": "m59",
+    "stage": "Groupe F",
+    "date": "2026-06-26T00:00:00+01:00",
+    "home": "Japon",
+    "away": "Suède",
+    "homeFlag": "🇯🇵",
+    "awayFlag": "🇸🇪",
+    "id": "m57"
+  },
+  {
+    "stage": "Groupe F",
+    "date": "2026-06-26T00:00:00+01:00",
+    "home": "Tunisie",
+    "away": "Pays-Bas",
+    "homeFlag": "🇹🇳",
+    "awayFlag": "🇳🇱",
+    "id": "m58"
+  },
+  {
     "stage": "Groupe D",
-    "date": "2026-06-24T03:00:00+01:00",
+    "date": "2026-06-26T03:00:00+01:00",
     "home": "Turquie",
     "away": "États-Unis",
     "homeFlag": "🇹🇷",
-    "awayFlag": "🇺🇸"
+    "awayFlag": "🇺🇸",
+    "id": "m59"
   },
   {
-    "id": "m60",
     "stage": "Groupe D",
-    "date": "2026-06-24T03:00:00+01:00",
+    "date": "2026-06-26T03:00:00+01:00",
     "home": "Paraguay",
     "away": "Australie",
     "homeFlag": "🇵🇾",
-    "awayFlag": "🇦🇺"
+    "awayFlag": "🇦🇺",
+    "id": "m60"
   },
   {
-    "id": "m65",
+    "stage": "Groupe I",
+    "date": "2026-06-26T20:00:00+01:00",
+    "home": "Norvège",
+    "away": "France",
+    "homeFlag": "🇳🇴",
+    "awayFlag": "🇫🇷",
+    "id": "m61"
+  },
+  {
+    "stage": "Groupe I",
+    "date": "2026-06-26T20:00:00+01:00",
+    "home": "Sénégal",
+    "away": "Irak",
+    "homeFlag": "🇸🇳",
+    "awayFlag": "🇮🇶",
+    "id": "m62"
+  },
+  {
     "stage": "Groupe H",
-    "date": "2026-06-25T01:00:00+01:00",
+    "date": "2026-06-27T01:00:00+01:00",
     "home": "Cap-Vert",
     "away": "Arabie Saoudite",
     "homeFlag": "🇨🇻",
-    "awayFlag": "🇸🇦"
+    "awayFlag": "🇸🇦",
+    "id": "m63"
   },
   {
-    "id": "m66",
     "stage": "Groupe H",
-    "date": "2026-06-25T01:00:00+01:00",
+    "date": "2026-06-27T01:00:00+01:00",
     "home": "Uruguay",
     "away": "Espagne",
     "homeFlag": "🇺🇾",
-    "awayFlag": "🇪🇸"
+    "awayFlag": "🇪🇸",
+    "id": "m64"
   },
   {
-    "id": "m63",
     "stage": "Groupe G",
-    "date": "2026-06-25T04:00:00+01:00",
+    "date": "2026-06-27T04:00:00+01:00",
     "home": "Égypte",
     "away": "Iran",
     "homeFlag": "🇪🇬",
-    "awayFlag": "🇮🇷"
+    "awayFlag": "🇮🇷",
+    "id": "m65"
   },
   {
-    "id": "m64",
     "stage": "Groupe G",
-    "date": "2026-06-25T04:00:00+01:00",
+    "date": "2026-06-27T04:00:00+01:00",
     "home": "Nouvelle-Zélande",
     "away": "Belgique",
     "homeFlag": "🇳🇿",
-    "awayFlag": "🇧🇪"
+    "awayFlag": "🇧🇪",
+    "id": "m66"
   },
   {
-    "id": "m67",
     "stage": "Groupe L",
-    "date": "2026-06-25T22:00:00+01:00",
+    "date": "2026-06-27T22:00:00+01:00",
     "home": "Panama",
     "away": "Angleterre",
     "homeFlag": "🇵🇦",
-    "awayFlag": "🏴"
+    "awayFlag": "🏴",
+    "id": "m67"
   },
   {
-    "id": "m68",
     "stage": "Groupe L",
-    "date": "2026-06-25T22:00:00+01:00",
+    "date": "2026-06-27T22:00:00+01:00",
     "home": "Croatie",
     "away": "Ghana",
     "homeFlag": "🇭🇷",
-    "awayFlag": "🇬🇭"
+    "awayFlag": "🇬🇭",
+    "id": "m68"
   },
   {
-    "id": "m71",
     "stage": "Groupe K",
-    "date": "2026-06-26T00:30:00+01:00",
+    "date": "2026-06-28T00:30:00+01:00",
     "home": "Colombie",
     "away": "Portugal",
     "homeFlag": "🇨🇴",
-    "awayFlag": "🇵🇹"
+    "awayFlag": "🇵🇹",
+    "id": "m69"
   },
   {
-    "id": "m72",
     "stage": "Groupe K",
-    "date": "2026-06-26T00:30:00+01:00",
+    "date": "2026-06-28T00:30:00+01:00",
     "home": "RD Congo",
     "away": "Ouzbékistan",
     "homeFlag": "🇨🇩",
-    "awayFlag": "🇺🇿"
+    "awayFlag": "🇺🇿",
+    "id": "m70"
   },
   {
-    "id": "m69",
     "stage": "Groupe J",
-    "date": "2026-06-26T03:00:00+01:00",
-    "home": "Algérie",
-    "away": "Autriche",
-    "homeFlag": "🇩🇿",
-    "awayFlag": "🇦🇹"
-  },
-  {
-    "id": "m70",
-    "stage": "Groupe J",
-    "date": "2026-06-26T03:00:00+01:00",
+    "date": "2026-06-28T03:00:00+01:00",
     "home": "Jordanie",
     "away": "Argentine",
     "homeFlag": "🇯🇴",
-    "awayFlag": "🇦🇷"
+    "awayFlag": "🇦🇷",
+    "id": "m71"
+  },
+  {
+    "stage": "Groupe J",
+    "date": "2026-06-28T03:00:00+01:00",
+    "home": "Algérie",
+    "away": "Autriche",
+    "homeFlag": "🇩🇿",
+    "awayFlag": "🇦🇹",
+    "id": "m72"
   }
 ]
