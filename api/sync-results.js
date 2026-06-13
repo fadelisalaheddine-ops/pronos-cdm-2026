@@ -1,6 +1,6 @@
 // api/sync-results.js
 // Vercel Serverless Function - appelée par un Cron Job
-// Récupère les scores des matchs de la Coupe du Monde 2026 via AllSportsApi (RapidAPI)
+// Récupère les scores des matchs de la Coupe du Monde 2026 via API-Football (api-sports.io)
 // et les écrit dans Firestore pour TOUS les groupes existants.
 
 import { initializeApp } from "firebase/app";
@@ -24,7 +24,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Mapping nom équipe API -> nom utilisé dans matches.json
+// World Cup = league id 1 in API-Football
+const WC_LEAGUE_ID = 1;
+const WC_SEASON = 2026;
+
+// Mapping nom équipe API-Football -> nom utilisé dans matches.json
 const TEAM_NAME_MAP = {
   "Mexico": "Mexique",
   "South Africa": "Afrique du Sud",
@@ -34,7 +38,7 @@ const TEAM_NAME_MAP = {
   "Czechia": "Tchéquie",
   "Canada": "Canada",
   "Bosnia and Herzegovina": "Bosnie-Herzégovine",
-  "Bosnia-Herzegovina": "Bosnie-Herzégovine",
+  "Bosnia & Herzegovina": "Bosnie-Herzégovine",
   "Qatar": "Qatar",
   "Switzerland": "Suisse",
   "Brazil": "Brésil",
@@ -46,11 +50,12 @@ const TEAM_NAME_MAP = {
   "Paraguay": "Paraguay",
   "Australia": "Australie",
   "Turkey": "Turquie",
-  "Turkiye": "Turquie",
+  "Türkiye": "Turquie",
   "Germany": "Allemagne",
   "Curacao": "Curaçao",
   "Curaçao": "Curaçao",
   "Ivory Coast": "Côte d'Ivoire",
+  "Côte d'Ivoire": "Côte d'Ivoire",
   "Cote d'Ivoire": "Côte d'Ivoire",
   "Ecuador": "Équateur",
   "Netherlands": "Pays-Bas",
@@ -64,7 +69,7 @@ const TEAM_NAME_MAP = {
   "New Zealand": "Nouvelle-Zélande",
   "Spain": "Espagne",
   "Cape Verde": "Cap-Vert",
-  "Cape Verde Islands": "Cap-Vert",
+  "Cabo Verde": "Cap-Vert",
   "Saudi Arabia": "Arabie Saoudite",
   "Uruguay": "Uruguay",
   "France": "France",
@@ -91,7 +96,6 @@ function normalizeTeamName(apiName) {
 }
 
 export default async function handler(req, res) {
-  // Sécurité simple : vérifier un secret partagé (optionnel)
   const authHeader = req.headers["authorization"];
   if (process.env.CRON_SECRET && authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
     return res.status(401).json({ error: "Unauthorized" });
@@ -100,71 +104,56 @@ export default async function handler(req, res) {
   const debug = req.query?.debug === "1";
 
   try {
-    // 1. Charger les matchs locaux (matches.json) pour faire la correspondance
+    // 1. Charger les matchs locaux (matches.json)
     const matchesRes = await fetch(`${getBaseUrl(req)}/matches.json`);
     const localMatches = await matchesRes.json();
 
-    // 2. Appeler l'API de scores en direct
-    const apiRes = await fetch("https://allsportsapi2.p.rapidapi.com/api/matches/live", {
-      headers: {
-        "x-rapidapi-host": "allsportsapi2.p.rapidapi.com",
-        "x-rapidapi-key": process.env.RAPIDAPI_KEY
+    // 2. Appeler API-Football: tous les fixtures de la Coupe du Monde 2026
+    const apiRes = await fetch(
+      `https://v3.football.api-sports.io/fixtures?league=${WC_LEAGUE_ID}&season=${WC_SEASON}`,
+      {
+        headers: {
+          "x-apisports-key": process.env.APIFOOTBALL_KEY
+        }
       }
-    });
+    );
 
     if (!apiRes.ok) {
       return res.status(502).json({ error: "Erreur API externe", status: apiRes.status });
     }
 
     const apiData = await apiRes.json();
-    const events = apiData.events || [];
+    const fixtures = apiData.response || [];
 
-    // DEBUG MODE: list all tournament names + World Cup matches regardless of status
     if (debug) {
-      const tournamentNames = [...new Set(events.map(e => e.tournament?.name))];
-      const wcEvents = events.filter(e =>
-        (e.tournament?.name || "").toLowerCase().includes("world cup")
-      ).map(e => ({
-        tournament: e.tournament?.name,
-        season: e.season?.year,
-        home: e.homeTeam?.name,
-        away: e.awayTeam?.name,
-        homeScore: e.homeScore,
-        awayScore: e.awayScore,
-        status: e.status
-      }));
       return res.status(200).json({
-        totalEvents: events.length,
-        sampleTournaments: tournamentNames.slice(0, 30),
-        worldCupEvents: wcEvents
+        resultsCount: apiData.results,
+        errors: apiData.errors,
+        sample: fixtures.slice(0, 5).map(f => ({
+          home: f.teams?.home?.name,
+          away: f.teams?.away?.name,
+          status: f.fixture?.status,
+          goals: f.goals,
+          date: f.fixture?.date
+        }))
       });
     }
 
-    // 3. Filtrer uniquement les matchs FIFA World Cup 2026 terminés
+    // 3. Filtrer les matchs terminés (status FT = Match Finished)
     const finishedResults = {};
 
-    for (const event of events) {
-      const tournamentName = event.tournament?.name || "";
-      const isWorldCup =
-        tournamentName.toLowerCase().includes("world cup") &&
-        event.season?.year === "2026";
-
-      if (!isWorldCup) continue;
-
-      // status.code: 100 = finished (typique sofascore-like APIs), 7 = en cours
-      const statusCode = event.status?.code;
-      const isFinished = statusCode === 100 || event.status?.type === "finished";
-
+    for (const fx of fixtures) {
+      const statusShort = fx.fixture?.status?.short;
+      const isFinished = ["FT", "AET", "PEN"].includes(statusShort);
       if (!isFinished) continue;
 
-      const homeName = normalizeTeamName(event.homeTeam?.name);
-      const awayName = normalizeTeamName(event.awayTeam?.name);
-      const homeScore = event.homeScore?.current;
-      const awayScore = event.awayScore?.current;
+      const homeName = normalizeTeamName(fx.teams?.home?.name);
+      const awayName = normalizeTeamName(fx.teams?.away?.name);
+      const homeScore = fx.goals?.home;
+      const awayScore = fx.goals?.away;
 
-      if (homeScore === undefined || awayScore === undefined) continue;
+      if (homeScore === null || awayScore === null) continue;
 
-      // Trouver le match correspondant dans matches.json
       const localMatch = localMatches.find(
         (m) => m.home === homeName && m.away === awayName
       );
@@ -175,10 +164,13 @@ export default async function handler(req, res) {
     }
 
     if (Object.keys(finishedResults).length === 0) {
-      return res.status(200).json({ message: "Aucun match terminé à synchroniser", checked: events.length });
+      return res.status(200).json({
+        message: "Aucun match terminé à synchroniser",
+        checked: fixtures.length
+      });
     }
 
-    // 4. Écrire ces résultats dans Firestore pour TOUS les groupes existants
+    // 4. Écrire dans Firestore pour tous les groupes
     const groupsSnap = await getDocs(collection(db, "groups"));
     let writeCount = 0;
 
